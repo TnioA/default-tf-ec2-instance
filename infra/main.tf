@@ -1,5 +1,5 @@
 resource "aws_security_group" "example" {
-  name_prefix = "sg"
+  name_prefix = var.instance_name
 
   ingress {
     from_port   = 80
